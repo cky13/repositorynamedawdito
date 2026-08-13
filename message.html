@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Zaisyy 💌</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: #FFCFD8;
+            font-family: 'Comic Relief', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        .envelope {
+            width: 300px;
+            min-height: 200px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            transition:
+                width 1.2s ease,
+                min-height 1.2s ease;
+        }
+
+        .envelope.expand {
+            width: 750px;
+            min-height: 700px;
+        }
+
+        .envelope .button {
+            background-color: #f6a5d3;
+            font-family: 'Comic Relief', sans-serif;
+            color: #fff;
+            border: none;
+            padding: 25px 60px;
+            font-size: 30px;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 80%;
+            transition: 0.3s;
+        }
+
+        .envelope .button:hover {
+            background-color: #f275bc;
+            transform: scale(1.03);
+        }
+
+        .envelope .button:disabled {
+            cursor: default;
+        }
+
+        .confession {
+            display: none;
+            width: 100%;
+        }
+
+        .confession.show {
+            display: block;
+        }
+
+        .confession p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .signature {
+            font-size: 24px;
+            color: #999;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        /* Back to Start button */
+
+        .restart-button {
+            display: none;
+            background-color: #f6a5d3;
+            font-family: 'Comic Relief', sans-serif;
+            color: #fff;
+            border: none;
+            padding: 15px 35px;
+            font-size: 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 30px auto 10px;
+            transition: 0.3s;
+        }
+
+        .restart-button:hover {
+            background-color: #f275bc;
+            transform: scale(1.05);
+        }
+
+        .restart-button.show {
+            display: block;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 800px) {
+
+            body {
+                padding: 20px;
+            }
+
+            .envelope {
+                width: 90%;
+                min-height: 200px;
+                padding: 25px;
+            }
+
+            .envelope.expand {
+                width: 90%;
+                min-height: 700px;
+            }
+
+            .envelope .button {
+                width: 90%;
+                font-size: 24px;
+                padding: 20px;
+            }
+
+            .confession p {
+                font-size: 16px;
+            }
+
+            .restart-button {
+                font-size: 18px;
+                padding: 14px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <audio id="bgMusic">
+        <source src="bgm.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="envelope">
+
+        <button class="button" onclick="showConfession()">
+            Open
+        </button>
+
+        <div class="confession">
+
+            <p class="signature">
+                Hiii, Zaisyy!
+            </p>
+
+            <p>
+                Since you've expressed yourself na and probably confused, so here I am.
+                I've been thinking this for a while naa, and gusto ko na maging honest sayo,
+                Gusto kita. OO GUSTO KITA!. AGHHH san ko ba toh sisimulan
+            </p>
+
+            <p>
+                Let's go back, back in time, kung saan nag hahanap kayo ng grade 12 representative para sa 67 partylist, then inexcuse niyo ako, hanggang ngayon, hindi ko pa din alam kung bakit niyo ako nirecruit, pero anyways, ang una kong impression nun sayo ay cutee, in which nag stuck siya sa utak ko for a few days. Then, nag-campaigning naa, in which luckily, naging part ako (somehow), tapos nakita ko kung paano ka magsalita sa harapan ng mga students, HOLEH MOLEH it's mesmerizing the way you speak in front, it captured my attention and also my heart, "Sa serbisyong tapat sa humanista dapat".
+            </p>
+
+            <p>
+                Then one day, after naming mag-peer evaluation sa stats and prob, nakipag volleyball kayo ni Val sa aming tatlo nina Yohan at Isaac, tapos tinawag nun si Val, tapos tayong dalawa na lang ang natira, along with Yohan and Isaac. I felt something that I haven't felt in a while, a feeling that I can't explain clearly, but I questioned myself, "Ano tong nararamdaman ko?!”. Also those smile, it’s so so pretyy :>. As months go by, my feelings kept growing and growing, even while we're in vacation arc, napapaisip ako minsan habang nagawa ng mga quest nina mame, “Ano kaya ginagawa niya ngayon?” “Kamusta na kaya shea?”
+            </p>
+
+            <p>
+                Recently, or now that we're talking, mas lalo pa kitang nakilala, about yourself, your hobbies, and your opinions and beliefs. Because of those, mas naging pursigido ako sa mga ginagawa ko, mapa academics man, or extracurricular activities. And sa first gala natin after mo mag take ng UPCAT, gagii akala ko magiging awkward tayo, but as the night falls, na realize ko na hindi naging awkward ang gala nating dalawa para sa akin as a mahiyaing tao, since you yapped quite a lot, and I love thatt, since mas nakakapag-express ako or naging yapper na din kahit papaano dahil sayoo, it’s like nahawaan ako ng pagiging talkative moo.
+            </p>
+
+            <p>
+                I just don't want to keep pretending like na wala akong nararamdaman sa iyo, kasi parang nagsisinungaling na din ako sa perspective mo. You deserve to know the truth, If you don't feel the same way, I understand. Hindi ko naman ipipilit ang nararamdaman ko, and I won't make you feel uncomfortable. What matters to me is that you know the truth. But if there's even a small part of you that feels something too, maybe we can try slowly. Yun lang namann, for my side.
+            </p>
+
+            <p>
+                Love,
+                Kyle
+            </p>
+
+            <button class="restart-button" onclick="goBackToStart()">
+                Back to Start 💌
+            </button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function showConfession() {
+
+            const music = document.getElementById("bgMusic");
+            const envelope = document.querySelector(".envelope");
+            const button = document.querySelector(".button");
+            const confession = document.querySelector(".confession");
+
+            // Start music
+            music.play().catch(error => {
+                console.log("Music could not play:", error);
+            });
+
+            // Prevent multiple clicks
+            button.disabled = true;
+
+            // Expand envelope
+            envelope.classList.add("expand");
+
+            // Wait for expansion
+            setTimeout(() => {
+
+                // Show confession
+                confession.classList.add("show");
+
+                // Hide Open button
+                button.style.display = "none";
+
+                const paragraphs = confession.querySelectorAll("p");
+                let paragraphIndex = 0;
+
+                // Save original text
+                paragraphs.forEach(p => {
+                    p.dataset.text = p.textContent.trim();
+                    p.textContent = "";
+                });
+
+                function typeParagraph() {
+
+                    // Check if all paragraphs are finished
+                    if (paragraphIndex >= paragraphs.length) {
+
+                        // Show Back to Start button
+                        const restartButton =
+                            document.querySelector(".restart-button");
+
+                        restartButton.classList.add("show");
+
+                        return;
+                    }
+
+                    const p = paragraphs[paragraphIndex];
+                    const text = p.dataset.text;
+
+                    let charIndex = 0;
+
+                    function type() {
+
+                        if (charIndex < text.length) {
+
+                            const char = text.charAt(charIndex);
+
+                            p.textContent += char;
+                            charIndex++;
+
+                            // Normal typing speed
+                            let delay = 65;
+
+                            // Punctuation pauses
+                            if (char === ",") {
+                                delay = 150;
+                            }
+
+                            else if (char === ".") {
+                                delay = 300;
+                            }
+
+                            else if (char === "!") {
+                                delay = 350;
+                            }
+
+                            else if (char === "?") {
+                                delay = 350;
+                            }
+
+                            setTimeout(type, delay);
+
+                        } else {
+
+                            // Move to next paragraph
+                            paragraphIndex++;
+
+                            setTimeout(typeParagraph, 300);
+                        }
+                    }
+
+                    type();
+                }
+
+                // Start typing
+                typeParagraph();
+
+            }, 1200);
+        }
+
+
+        function goBackToStart() {
+
+            // Stop music
+            const music = document.getElementById("bgMusic");
+
+            music.pause();
+            music.currentTime = 0;
+
+            // Redirect to index.html
+            window.location.href = "index.html";
+        }
+
+    </script>
+
+</body>
+</html>
